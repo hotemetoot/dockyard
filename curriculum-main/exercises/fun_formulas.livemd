@@ -67,7 +67,16 @@ total = 42
 Enter your solution below.
 
 ```elixir
+defmodule Test do
+#   def twice(num) do
+#     num * num
+#   end
+    def triple(number), do: number * 3
 
+end
+
+
+Test.triple(5)
 ```
 
 ## Rocket Ship
@@ -93,7 +102,10 @@ mass * acceleration
 Enter your solution below.
 
 ```elixir
+mass = 10
+acceleration = 50
 
+force = mass * acceleration
 ```
 
 ## What Do You Tip?
@@ -117,7 +129,8 @@ initial_cost * tip_percent
 Enter your solution below.
 
 ```elixir
-
+cost = 20
+tip = cost * 0.15
 ```
 
 ## Pythagorean Theorum
@@ -141,7 +154,9 @@ a ** 2 + b ** 2
 Enter your solution below.
 
 ```elixir
-
+a = 4
+b = 10
+c_squared = a**2 + b**2
 ```
 
 ## Bonus: Square Root
@@ -161,7 +176,7 @@ c_squared = 116
 Enter your solution below.
 
 ```elixir
-
+math.
 ```
 
 ## Commit Your Progress
