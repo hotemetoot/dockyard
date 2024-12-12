@@ -192,8 +192,31 @@ You could omit the **normal** cards or allow **high** and **low** cards to balan
 Enter your solution below.
 
 ```elixir
+defmodule Test do
+  
+  def draw(x) when x > 0 do
+    random_card = Enum.random(1..13)
+    classify(random_card) + draw(x-1)
+  end
+
+  def draw(0), do: 0
+  
+  defp classify(card) do
+    cond do
+      card > 9 -> 1
+      card < 7 -> -1
+      true -> 0
+    end
+    
+  end
+    
+end
+
+Test.draw(10)
+```
+
+```elixir
 number_of_cards = 10
-random_card = Enum.random(1..13)
 card_list =
   for _x <- (1..number_of_cards) do
     Enum.random(1..13)
